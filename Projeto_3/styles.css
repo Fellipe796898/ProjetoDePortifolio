@@ -1,4 +1,4 @@
-/* === SEU CÓDIGO ORIGINAL === */
+/* === BASE === */
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +12,16 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* === HEADER === */
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(10,10,10,0.95);
+  background: rgba(10, 10, 10, 0.95);
   box-shadow: 0 0 15px #52b788;
   z-index: 1000;
 }
@@ -51,7 +51,7 @@ body {
   text-shadow: 0 0 5px #52b788, 0 0 15px #2d6a4f;
 }
 
-/* HERO */
+/* === HERO === */
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, #52b788, #2d6a4f);
@@ -66,20 +66,24 @@ body {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 60%);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
   animation: pulse 4s infinite;
   z-index: 1;
 }
 
 @keyframes pulse {
-  0%,100% {transform: scale(1);}
-  50% {transform: scale(1.05);}
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .hero-content {
@@ -123,7 +127,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* PROJETOS */
+/* === PROJETOS === */
 .projetos {
   position: relative;
   text-align: center;
@@ -160,7 +164,7 @@ body {
 }
 
 .card {
-  background: rgba(10,10,10,0.9);
+  background: rgba(10, 10, 10, 0.9);
   border-radius: 15px;
   padding: 30px;
   width: 320px;
@@ -182,7 +186,7 @@ body {
   filter: drop-shadow(0 0 5px #52b788);
 }
 
-/* IMPACTO */
+/* === IMPACTO === */
 .impacto {
   padding: 100px 60px;
   background: #081c15;
@@ -209,7 +213,7 @@ body {
   font-weight: 600;
 }
 
-/* CONTATO */
+/* === CONTATO === */
 .contato {
   padding: 100px 60px;
   background: #0a0a0a;
@@ -224,17 +228,19 @@ form {
   margin: 0 auto;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border: 2px solid #52b788;
   border-radius: 8px;
   outline: none;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   color: #d8f3dc;
   transition: all 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #2d6a4f;
   box-shadow: 0 0 10px #52b788, 0 0 20px #2d6a4f;
 }
@@ -258,7 +264,7 @@ button:hover {
   box-shadow: 0 0 20px #52b788, 0 0 40px #2d6a4f;
 }
 
-/* FOOTER */
+/* === FOOTER === */
 footer {
   background: #081c15;
   color: #d8f3dc;
@@ -268,11 +274,12 @@ footer {
   text-shadow: 0 0 5px #52b788;
 }
 
-/* === RESPONSIVO === */
+/* === MEDIA QUERIES === */
 
 /* Tablet padrão */
 @media (max-width: 900px) {
-  .cards, .metricas {
+  .cards,
+  .metricas {
     flex-direction: column;
     align-items: center;
   }
@@ -290,12 +297,11 @@ footer {
     padding: 60px 20px;
   }
 
-  .impacto, .contato {
+  .impacto,
+  .contato {
     padding: 60px 20px;
   }
 }
-
-/* === NOVOS MEDIA QUERIES === */
 
 /* Tablets menores (até 768px) */
 @media (max-width: 768px) {
