@@ -11,7 +11,15 @@
   <!-- HEADER -->
   <header class="header">
     <div class="logo">Tech<span>Vision</span></div>
-    <nav class="nav">
+
+    <!-- Botão hambúrguer -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav class="nav" id="nav">
       <a href="#servicos">Serviços</a>
       <a href="#portfolio">Portfólio</a>
       <a href="#sobre">Sobre</a>
@@ -122,19 +130,7 @@
     <p>© 2025 TechVision — Todos os direitos reservados.</p>
   </footer>
 
+  <!-- JavaScript externo -->
   <script src="script.js"></script>
-  <script>
-    // Animação simples ao scroll
-    const elements = document.querySelectorAll('[data-animate]');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    elements.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>

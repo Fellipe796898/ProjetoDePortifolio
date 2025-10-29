@@ -1,3 +1,14 @@
+// ========== ANIMAÇÃO AO SCROLL ==========
+const elements = document.querySelectorAll('[data-animate]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('active');
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+
+// ========== FORMULÁRIO DE CONTATO ==========
 document.getElementById("formContato").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -14,6 +25,14 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
 
   status.textContent = "Mensagem enviada com sucesso!";
   status.style.color = "#00b4d8";
-
   this.reset();
+});
+
+// ========== MENU HAMBÚRGUER ==========
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  menuToggle.classList.toggle("open");
 });

@@ -10,7 +10,9 @@ body {
   color: #fff;
   height: 100vh;
   overflow: hidden; /* impede rolagem */
-  background: url("/nationalgeographic_2808031_bx.webp")
+  background: url("/nationalgeographic_2808031_bx.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 /* ---------- NAV ---------- */
@@ -121,4 +123,121 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Telas grandes (até 1200px) */
+@media (max-width: 1200px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  .skills {
+    gap: 15px;
+  }
+}
+
+/* Tablets (até 900px) */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+    padding: 0 20px;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 40px;
+  }
+
+  .skill-card {
+    padding: 10px 20px;
+  }
+}
+
+/* Celulares grandes (até 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 25px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .skills {
+    position: static;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+/* Celulares pequenos (até 400px) */
+@media (max-width: 400px) {
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+  }
+
+  .skill-card {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
 }

@@ -1,16 +1,13 @@
-@import url("../landing_page.css"); /* importa o estilo base */
+@import url("../landing_page.css");
 
-/* ====== AJUSTES ESPECÍFICOS PARA A PÁGINA DE SERVIÇOS ====== */
-
-/* limita e centraliza imagens dos cards */
 .ln-features .card img {
   width: 100%;
-  max-width: 220px; /* limite horizontal */
+  max-width: 240px;
   height: auto;
   margin: 0 auto 16px auto;
   display: block;
   border-radius: 12px;
-  object-fit: cover; /* corta se a proporção for diferente */
+  object-fit: cover;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -20,20 +17,67 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* mantém o texto dentro dos limites do card */
 .ln-features .card {
   overflow: hidden;
   padding: 28px 22px 32px 22px;
+  text-align: center;
 }
 
-/* ajusta proporção em telas menores */
+@media (max-width: 1024px) {
+  .ln-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .ln-features .card {
+    max-width: 400px;
+  }
+
+  .ln-features .card img {
+    max-width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
+  .ln-features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ln-features .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .ln-features .card img {
     max-width: 180px;
   }
 }
+
 @media (max-width: 480px) {
+  .ln-features {
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .ln-features .card {
+    width: 100%;
+    padding: 20px;
+  }
+
   .ln-features .card img {
     max-width: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ln-features .card img {
+    max-width: 130px;
+  }
+
+  .ln-features .card {
+    padding: 16px;
   }
 }

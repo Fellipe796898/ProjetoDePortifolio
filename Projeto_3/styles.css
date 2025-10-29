@@ -1,3 +1,4 @@
+/* === SEU CÓDIGO ORIGINAL === */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  background: #0a0a0a; /* escuro para destacar LEDs */
+  background: #0a0a0a;
   color: #e0f7e0;
   line-height: 1.6;
 }
@@ -127,7 +128,7 @@ body {
   position: relative;
   text-align: center;
   padding: 100px 60px;
-  background: rgba(40, 60, 40, 0.85); /* verde translúcido */
+  background: rgba(40, 60, 40, 0.85);
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 0 20px #52b788 inset;
@@ -267,7 +268,9 @@ footer {
   text-shadow: 0 0 5px #52b788;
 }
 
-/* RESPONSIVO */
+/* === RESPONSIVO === */
+
+/* Tablet padrão */
 @media (max-width: 900px) {
   .cards, .metricas {
     flex-direction: column;
@@ -289,5 +292,87 @@ footer {
 
   .impacto, .contato {
     padding: 60px 20px;
+  }
+}
+
+/* === NOVOS MEDIA QUERIES === */
+
+/* Tablets menores (até 768px) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+    margin: 0 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Smartphones médios (até 600px) */
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 40px 15px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+/* Smartphones pequenos (até 400px) */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
