@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Fellipe Dorazio</title>
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav>
+      <ul>
+        <li><a href="/index.html"> Inicio </a></li>
+        <li><a href="/sobre_mim/sobre_mim.html">Sobre Mim</a></li>
+        <li><a href="/contato/contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="formulario-contato">
+      <h1>Entre em Contato</h1>
+      <p>Gostou do meu trabalho ou quer tirar alguma dúvida?  
+      Preencha o formulário abaixo e entrarei em contato o mais rápido possível!</p>
+
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <aside class="info-contato">
+      <h2>Minhas redes</h2>
+      <ul>
+        <li><a href="https://github.com/" target="_blank">🐱 GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a></li>
+        <li><a href="mailto:teuemail@email.com">📧 E-mail</a></li>
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>

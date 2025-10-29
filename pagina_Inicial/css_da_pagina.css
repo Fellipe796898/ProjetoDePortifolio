@@ -1,0 +1,124 @@
+/* ---------- GERAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden; /* impede rolagem */
+  background: url("/nationalgeographic_2808031_bx.webp")
+}
+
+/* ---------- NAV ---------- */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00c3ff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00c3ff;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00c3ff;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #009ad6;
+}
+
+/* ---------- SKILLS ---------- */
+.skills {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: rgba(0, 195, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

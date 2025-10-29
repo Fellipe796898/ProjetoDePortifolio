@@ -1,0 +1,16 @@
+/* === AJUSTE DE TAMANHO DAS IMAGENS DOS SERVIÇOS === */
+
+.ln-features .card img {
+  width: 100%;
+  max-width: 220px;       /* tamanho fixo para todas as imagens */
+  height: 160px;          /* altura uniforme */
+  object-fit: cover;      /* corta o excesso sem distorcer */
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.ln-features .card img:hover {
+  transform: scale(1.05);
+}

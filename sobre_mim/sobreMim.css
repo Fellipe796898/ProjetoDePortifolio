@@ -1,0 +1,126 @@
+/* --- CONFIGURAÇÃO GERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('/nationalgeographic_2808031_bx.webp') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- CABEÇALHO --- */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #ffcc00;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: #ffcc00;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+.conteudo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+/* --- CARD "SOBRE MIM" --- */
+.sobre {
+  width: 420px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+}
+
+.sobre h2 {
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  line-height: 1.5;
+}
+
+/* --- SEÇÃO DE CARDS DE PROJETOS --- */
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+/* --- CONFIGURAÇÃO DOS CARDS --- */
+.card {
+  width: 260px;              /* AUMENTEI A LARGURA */
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  text-align: center;
+  padding: 18px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px rgba(255, 204, 0, 0.6);
+}
+
+.card img {
+  width: 100%;
+  height: 100px;            /* ALTURA MANTIDA */
+  border-radius: 10px;
+  object-fit: cover;        /* MANTÉM PROPORÇÃO SEM DISTORCER */
+}
+
+.card a {
+  text-decoration: none;
+  color: #ffcc00;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ddd;
+}

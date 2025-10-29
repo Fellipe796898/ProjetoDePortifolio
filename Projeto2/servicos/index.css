@@ -1,0 +1,39 @@
+@import url("../landing_page.css"); /* importa o estilo base */
+
+/* ====== AJUSTES ESPECÍFICOS PARA A PÁGINA DE SERVIÇOS ====== */
+
+/* limita e centraliza imagens dos cards */
+.ln-features .card img {
+  width: 100%;
+  max-width: 220px; /* limite horizontal */
+  height: auto;
+  margin: 0 auto 16px auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover; /* corta se a proporção for diferente */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ln-features .card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* mantém o texto dentro dos limites do card */
+.ln-features .card {
+  overflow: hidden;
+  padding: 28px 22px 32px 22px;
+}
+
+/* ajusta proporção em telas menores */
+@media (max-width: 768px) {
+  .ln-features .card img {
+    max-width: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .ln-features .card img {
+    max-width: 150px;
+  }
+}

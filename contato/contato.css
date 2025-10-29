@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("/nationalgeographic_2808031_bx.webp") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MENU */
+.cabecalho {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+  width: 100%;
+}
+
+.cabecalho nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cabecalho nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.cabecalho nav a:hover,
+.cabecalho nav a.ativo {
+  color: #00c3ff;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 60px 50px;
+  gap: 40px;
+}
+
+/* FORMULÁRIO */
+.formulario-contato {
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 420px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.formulario-contato h1 {
+  color: #00c3ff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.formulario-contato p {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: #ddd;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  background-color: #00c3ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #00a0d4;
+}
+
+/* INFORMAÇÕES LATERAIS */
+.info-contato {
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.info-contato h2 {
+  color: #00c3ff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-contato ul {
+  list-style: none;
+}
+
+.info-contato a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.info-contato a:hover {
+  color: #00c3ff;
+}
